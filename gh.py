@@ -1415,7 +1415,7 @@ async def game_info_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
             "<b>Examples:</b>\n"
             "• <code>/lb 10 2.00</code> - Bet $10 at 2x\n"
             "• <code>/lb all 1.5</code> - Bet all at 1.5x\n\n"
-           f"<b>Min bet:</b> ${MIN_BALANCE:.2f}",
+            f"<b>Min bet:</b> ${MIN_BALANCE:.2f}",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("🔙 Back to House Games", callback_data="games_category_house")]]
